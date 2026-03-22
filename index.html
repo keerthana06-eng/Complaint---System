@@ -88,17 +88,21 @@ function analyze() {
     let text = document.getElementById("complaint").value.toLowerCase();
 
     let severity = "Low";
-    let delay = "2 days";
+    let delay = "1 day"
+        "Our Teamed received Your Compliant and will Take necessary action Shortly.
+            Sorry for the inconvenience";
     let colorClass = "low";
 
     if (text.includes("accident") || text.includes("fire") || text.includes("urgent")) {
         severity = "High";
-        delay = "will take care Within 15 mins";
+        delay = "will take care Within 15 mins"
+            "Emergency services and concerned authorities have been notified immidiately.";
         colorClass = "high";
     } 
     else if (text.includes("garbage") || text.includes("water") || text.includes("delay")) {
         severity = "Medium";
-        delay = "Cleaned within  1 day";
+        delay = "Cleaned within  1 day"
+            "Sorry for inconvenience our Municipal department will clean soon.Thank you for helping!!";
         colorClass = "medium";
     }
 
